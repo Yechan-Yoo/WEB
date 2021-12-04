@@ -1,24 +1,63 @@
 <!doctype html>
 <html>
 <head>
-<title>WEB1 - Bitcoin</title>
-<meta charset="utf-8">
+  <title>WEB-CSS씨에스에스</title>
+  <meta charset="utf-8">
+  <style>
+    body{
+      margin:0;
+    }
+    a {
+      color:red;
+      text-decoration: line-through;
+    }
+    #active {
+      color:blue;
+      text-decoration: underline;
+    }
+    .saw {
+      color:gray;
+    }
+    h1 {
+      font-size: 90px;
+      text-align: center;
+      border-bottom:1px solid gray;
+      margin: 0;
+      padding:20px;
+    }
+    #grid ol{
+      border-right:1px solid gray;
+      width:100px;
+      margin: 0;
+      padding: 30px;
+    }
+    #grid{
+      display: grid;
+      grid-template-columns: 150px 1fr
+    }
+    #article{
+      padding-left:30px;
+    }
+  </style>
 </head>
 <body>
   <h1><a href="index.html">WEB</a></h1>
+  <div id= "grid">
   <ol>
-    <li><a href="1.html">My Love 노래 가사</a></li>
-    <li><a href="2.html">Bitcoin</a></li>
-    <li><a href="3.html">Ethreum</a></li>
+    <li><a href="1.html" class="saw">HTML</a></li>
+    <li><a href="2.html" class="saw" id="active">CSS</a></li>
+    <li><a href="3.html">JavaScript</a></li>
   </ol>
-  <h2>Bitcoin</h2>
-  <p>
-    미국 대형투자은행인 JP모건은 암호화폐 비트코인이
-    장기적으로 최고 14만 6000달러(약 1억 6000만원)까지
-    오를 수 있다고 전망했다.
-    지난 2017년 비트코인의 1차 급등 당시
-    제이미 다이먼 회장이 가상화폐 열풍에 대해
-    “17세기 네덜란드의 튤립 광풍보다도 더 심하다"면서
-    “비트코인은 사기”라고 비난했던 것과는 사뭇 다른 모습이다.
-  </p>
-</body>
+  <div id="article">
+     <h2>CSS</h2>
+     <p>
+       웹 문서의 전반적인 스타일을 미리 저장해 둔 스타일시트이다.<br>
+       문서 전체의 일관성을 유지할 수 있고, 세세한 스타일 지정의 필요를 줄어들게 하였다.<br>
+       기존의 HTML은 웹 문서를 다양하게 설계하고 수시로 변경하는데 많은 제약이 따르는데,<br>
+       이를 보완하기 위해 만들어진 것이 스타일 시트이고 스타일 시트의 표준안이 바로 CSS이다.<br>
+       간단히 스타일 시트라고도 한다.
+     </p>
+   </div>
+ </div>
+  </body>
+</html>
